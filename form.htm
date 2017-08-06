@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>FORM</title>
+<meta charset=UTF-8>
+<meta name="viewpoint" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+<header>
+<h2>form
+</h2>
+</header>
+<form action="form.php" enctype="multipart/form-data" method="post" class="f">
+<label><b>NAME:</b></label>
+<input type="text" name="name" id="name" placeholder="enter name here">
+<br>
+<br>
+<label><b>NUMBER:</b></label> 
+<input type="text" name="number" id="number" placeholder="enter number here">
+<br>
+<br>
+<label><b>EMAIL:</b></label>
+<input type="email" name="email" id="email" placeholder="enter email id here">
+<br>
+<br>
+<label><b>DEPARTMENT:</b></label>
+<select name="department" id="department">
+	<option value=NULL>department</option>
+	<option value="chem">Chemical</option>
+	<option value="civil">Civil</option> 
+	<option value="ece">ECE</option>
+	<option value="eee">EEE</option>
+	<option value="cs">ComputerScience</option>
+	<option value="prod">Production</option>
+	<option value="meta">Metallurgy</option>
+</select>
+<br>
+<br>	
+<label><b>YEAR:</b></label>
+<select name="year" id="year">
+	<option value=null>year</option>
+	<option value="1">1st year</option>
+	<option value="2">2nd year</option>
+	<option value="3">3rd year</option>
+	<option value="4">4th year</option>
+</select>
+<br>
+<br>
+<p>Choose file to upload:</p>
+<input type="file" name="resume" id="resume">
+<br>
+<br>
+<p><input type="submit"> <input type="reset" value="reset"></p>
+</form>
+</body>
+</html>
